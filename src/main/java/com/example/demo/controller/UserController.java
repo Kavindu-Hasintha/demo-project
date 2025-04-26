@@ -15,4 +15,10 @@ public class UserController {
 
         return ResponseEntity.ok(result);
     }
+
+    @GetMapping("/me")
+    public ResponseEntity<String> getMe() {
+        String result = "Name: Kavindu, Age: 22, Address: Colombo-07";
+        return ResponseEntity.ok(result);
+    }
 }
